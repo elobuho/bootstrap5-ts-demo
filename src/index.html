@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotopino Frontend</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-md-8">
+          <div class="form-card mt-3">
+            <div class="card-body">
+              <form id="test-form">
+                <div class="form-input">
+                  <label for="name" class="form-label">Imię i Nazwisko</label>
+                  <input class="form-control" id="name" type="text" />
+                </div>
+                <div class="form-input">
+                  <label for="message" class="form-label">Wiadomość</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <input
+                  class="btn btn-primary mt-2 mx-auto d-block"
+                  type="submit"
+                  value="Prześlij"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form-modal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Wiadomość</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Wiadomość od: <span id="modal-message-from"></span></p>
+            <p class="mb-0">Treść wiadomości:</p>
+            <p id="modal-message-body"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
